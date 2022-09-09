@@ -1,3 +1,4 @@
+const  {errorHandler} = require("./errorHandle.js")
 async function getData(){
     try{
         undefined.find();
