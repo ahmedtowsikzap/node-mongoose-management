@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ahmedtowsikzap/node-mongo-advance/issues"
   },
-  "homepage": "https://github.com/ahmedtowsikzap/node-mongo-advance#readme"
+  "homepage": "https://github.com/ahmedtowsikzap/node-mongo-advance#readme",
+  "dependencies": {
+    "node": "^18.9.0"
+  }
 }
