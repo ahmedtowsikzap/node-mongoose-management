@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ahmedtowsikzap/node-mongo-advance#readme",
   "dependencies": {
-    "node": "^18.9.0"
+    "node": "^18.9.0",
+    "underscore": "^1.13.4"
   }
 }
