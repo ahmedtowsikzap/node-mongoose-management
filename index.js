@@ -9,7 +9,17 @@ const http = require('http')
 
 const server = http.createServer((req,res) => {
 
-res.end('hellow')
+ if(req.url === "/"){
+    res.writeHead(200, {"Content-Type" : 'text/html'})
+    res.write('<p>this one is home page </p>')
+    res.end()
+ }
+ else if (req.url === "/contact"){
+    res.writeHead(200, {"Content-Type" : 'text/html'})
+    res.write('<p>this one is contact page & form </p>')
+    res.end()
+ }
+     
 } )
 
 const port = 5000
