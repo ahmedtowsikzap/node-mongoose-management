@@ -10,10 +10,13 @@ const url = require('url')
 
 const server = http.createServer((req,res) => {
 
-
+const address_url = 'http://localhost:5000/contact?name=ahmed&country=bangladesh';
+const parsed_url = url.parse(address_url,true)
+const queryObj = parsed_url.query
+console.log(queryObj);
  }
 )
-console.log(url);
+// console.log(url);
 const port = 5000
 
 server.listen(port)
