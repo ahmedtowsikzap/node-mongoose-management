@@ -6,16 +6,22 @@
 
 const http = require('http')
 const url = require('url')
+const fs =  require('fs')
 
 
 const server = http.createServer((req,res) => {
+      if(req.url = '/') {
+        fs.readFile('data.txt, (err,data) => {
+      if(err){
 
-const address_url = 'http://localhost:5000/contact?name=ahmed&country=bangladesh';
-const parsed_url = url.parse(address_url,true)
-const queryObj = parsed_url.query
-console.log(queryObj);
- }
-)
+      res.write("failed to read data")
+      res.end()
+      } else{
+        res.write(data)
+        res.end()
+      }
+        })
+
 // console.log(url);
 const port = 5000
 
